@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e9363fb9-9031-4dd9-b1d3-a52b3075b035" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphql/user/query.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/user/query.graphql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,8 +188,16 @@
       <workItem from="1580958241481" duration="2812000" />
       <workItem from="1581077415418" duration="5482000" />
       <workItem from="1581132081090" duration="1476000" />
-      <workItem from="1581153149383" duration="9102000" />
+      <workItem from="1581153149383" duration="9970000" />
     </task>
+    <task id="LOCAL-00001" summary="up..">
+      <created>1581173974669</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581173974669</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +207,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/nova/nova2" />
     </ignored-roots>
+    <MESSAGE value="up.." />
+    <option name="LAST_COMMIT_MESSAGE" value="up.." />
   </component>
   <component name="WindowStateProjectService">
     <state x="685" y="410" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581080127059">
@@ -209,6 +219,10 @@
       <screen x="0" y="23" width="1920" height="1135" />
     </state>
     <state x="698" y="352" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1920.1135@0.23.1920.1135" timestamp="1580907993406" />
+    <state x="554" y="188" key="CommitChangelistDialog2" timestamp="1581173974390">
+      <screen x="0" y="23" width="1920" height="1135" />
+    </state>
+    <state x="554" y="188" key="CommitChangelistDialog2/0.23.1920.1135@0.23.1920.1135" timestamp="1581173974390" />
     <state x="721" y="510" key="ComposerInitDialogKey" timestamp="1580911186126">
       <screen x="0" y="23" width="1920" height="1135" />
     </state>
@@ -237,14 +251,18 @@
       <screen x="0" y="23" width="1920" height="1135" />
     </state>
     <state x="690" y="329" width="540" height="524" key="StructurePopup/0.23.1920.1135@0.23.1920.1135" timestamp="1580898977663" />
+    <state x="560" y="330" key="Vcs.Push.Dialog.v2" timestamp="1581173976366">
+      <screen x="0" y="23" width="1920" height="1135" />
+    </state>
+    <state x="560" y="330" key="Vcs.Push.Dialog.v2/0.23.1920.1135@0.23.1920.1135" timestamp="1581173976366" />
     <state x="639" y="432" key="com.intellij.ide.util.TipDialog" timestamp="1581132193322">
       <screen x="0" y="23" width="1920" height="1135" />
     </state>
     <state x="639" y="432" key="com.intellij.ide.util.TipDialog/0.23.1920.1135@0.23.1920.1135" timestamp="1581132193322" />
-    <state x="625" y="277" width="670" height="676" key="search.everywhere.popup" timestamp="1581173934756">
+    <state x="625" y="277" width="670" height="676" key="search.everywhere.popup" timestamp="1581174858538">
       <screen x="0" y="23" width="1920" height="1135" />
     </state>
     <state x="625" y="269" width="670" height="715" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1581085695121" />
-    <state x="625" y="277" width="670" height="676" key="search.everywhere.popup/0.23.1920.1135@0.23.1920.1135" timestamp="1581173934756" />
+    <state x="625" y="277" width="670" height="676" key="search.everywhere.popup/0.23.1920.1135@0.23.1920.1135" timestamp="1581174858538" />
   </component>
 </project>

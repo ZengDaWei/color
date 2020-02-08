@@ -16,6 +16,8 @@ type Mutation @namespace(field:"mutations"){
 type User {
     id: ID!
     name: String!
+    account:String
+    jwt:String
     email: String!
     created_at: DateTime!
     updated_at: DateTime!
