@@ -1,0 +1,22 @@
+type Query {
+    users: [User!]! @paginate(defaultCount: 10)
+    user(id: ID @eq): User @find
+}
+type Mutation @namespace(field:"mutations"){
+    login(
+        phone:String!,
+        pwd:String!,
+        os:String,
+        deviceName:String,
+        position:String,
+        uuid:String
+    ):User @field(resolver:"UserMutation@login")
+}
+
+type User {
+    id: ID!
+    name: String!
+    email: String!
+    created_at: DateTime!
+    updated_at: DateTime!
+}
