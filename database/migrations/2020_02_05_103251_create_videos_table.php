@@ -21,11 +21,13 @@ class CreateVideosTable extends Migration
             $table->string('hash')->nullable()->comment('file hash value');
             $table->string('disk', 30)->nullable()->comment('on which disk');
             $table->string('type', 30)->nullable()->comment('类型');
-            $table->float('duration')->comment('时长');
-            $table->morphs('used');
+            $table->float('duration')->nullable()->comment('时长');
+
+            $table->nullableMorphs('used');
 
             $table->index('user_id');
             $table->index('hash');
+
             $table->softDeletes();
             $table->timestamps();
         });
