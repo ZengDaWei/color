@@ -31,6 +31,7 @@ class VideoService implements VideoContract
         $video->absolute_path = $absPath;
         $video->duration = FFMpegUtil::getDuration($absPath);
 
+        $video->save();
         return $video;
     }
 
