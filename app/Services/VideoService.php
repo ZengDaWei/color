@@ -24,7 +24,7 @@ class VideoService implements VideoContract
         $video->save();
         $extension = '.' . $file->getClientOriginalExtension();
 
-        $path = sprintf('video/%d%s', $video->id, $extension);
+        $path = sprintf('public/video/%d%s', $video->id, $extension);
         $absPath = self::uploadFile($file,$path);
 
         $video->relative_path = $path;
