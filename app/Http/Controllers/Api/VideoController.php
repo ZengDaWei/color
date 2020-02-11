@@ -26,7 +26,10 @@ class VideoController extends Controller
         $user = User::find($userId);
 
         $video = VideoService::uploadVideo($file,$user);
-        return array ('url' => config('app.url').\Storage::url($video->relative_path));
+        return array (
+            'url' => config('app.url').\Storage::url($video->relative_path),
+            'video_id' => $video->id
+        );
     }
 
     public static function validVideo(UploadedFile $file):bool

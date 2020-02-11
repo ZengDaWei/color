@@ -1,0 +1,7 @@
+type Video{
+    id:ID
+    user:User @belongsTo
+    relative_path:String
+    absolute_path:String
+    duration:Float
+}

@@ -16,6 +16,7 @@ class CreateVideosTable extends Migration
         Schema::create('videos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedInteger('user_id');
+            $table->unsignedInteger('cover_id');
             $table->string('relative_path', 100)->nullable()->comment('相对路径');
             $table->string('absolute_path', 100)->nullable()->comment('绝对路径');
             $table->string('hash')->nullable()->comment('file hash value');
@@ -26,6 +27,7 @@ class CreateVideosTable extends Migration
             $table->nullableMorphs('used');
 
             $table->index('user_id');
+            $table->index('cover_id');
             $table->index('hash');
 
             $table->softDeletes();
