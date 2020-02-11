@@ -10,11 +10,7 @@ class FFMpegUtil
     // 获取视频信息
     public static function getVideoInfo($streamPath)
     {
-        $ffprobe = \FFMpeg\FFProbe::create([
-            'ffprobe.binaries' => [
-                exec('which ffprobe'),
-            ],
-        ]);
+        $ffprobe = app('ffprobe');
         $stream  = $ffprobe->streams($streamPath)->videos()->first();
         return $stream ? $stream->all() : [];
     }

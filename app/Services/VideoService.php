@@ -38,6 +38,6 @@ class VideoService implements VideoContract
     public static function uploadFile(UploadedFile $file,string $path)
     {
         \Storage::put($path, file_get_contents($file->getRealPath()));
-        return storage_path($path);
+        return \Storage::path($path);
     }
 }

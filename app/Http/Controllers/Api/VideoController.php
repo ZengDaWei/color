@@ -25,8 +25,8 @@ class VideoController extends Controller
         $userId = (int) $request->all()['user_id'];
         $user = User::find($userId);
 
-        $path = VideoService::uploadVideo($file,$user);
-        dd($path);
+        $video = VideoService::uploadVideo($file,$user);
+        return array ('url' => config('app.url').\Storage::url($video->relative_path));
     }
 
     public static function validVideo(UploadedFile $file):bool
@@ -36,6 +36,6 @@ class VideoController extends Controller
         }
         $extend = $file->getClientOriginalExtension();
 
-        return in_array($extend,['mp4','fmp']);
+        return in_array($extend,['mp4','avi']);
     }
 }
