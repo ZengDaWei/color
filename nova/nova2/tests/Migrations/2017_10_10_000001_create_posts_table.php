@@ -15,11 +15,16 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id')->index()->nullable();
-            $table->string('title');
+            $table->integer('user_id')->nullable();
+            $table->string('title')->nullable();
             $table->string('description')->nullable();
-            $table->integer('word_count')->nullable();
-            $table->timestamp('published_at')->nullable();
+
+            $table->integer('type')->default(0)->comment('0-video 1-article');
+            $table->integer('status')->default(1)->comment('-1-offline 1-online');
+
+            $table->unsignedInteger('count_likes')->default(0);
+            $table->unsignedInteger('count_comments')->default(0);
+            $table->unsignedInteger('hot')->default(0);
             $table->timestamps();
         });
     }

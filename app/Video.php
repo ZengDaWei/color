@@ -16,4 +16,9 @@ class Video extends BaseModel
     {
         return $this->morphTo();
     }
+
+    public function cover():BelongsTo
+    {
+        return $this->belongsTo(Image::class);
+    }
 }

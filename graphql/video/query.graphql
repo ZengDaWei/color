@@ -4,4 +4,9 @@ type Video{
     relative_path:String
     absolute_path:String
     duration:Float
+    width:Float
+    height:Float
+    used: used @morphTo
 }
+
+union used = Post | User

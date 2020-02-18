@@ -3,10 +3,12 @@
 namespace App\Services;
 
 use App\Helpers\FFMpegUtil;
+use App\Jobs\MakeCover;
 use App\Services\Contracts\VideoContract;
 use App\User;
 use App\Video;
 use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Arr;
 
 class VideoService implements VideoContract
 {
@@ -29,9 +31,14 @@ class VideoService implements VideoContract
 
         $video->relative_path = $path;
         $video->absolute_path = $absPath;
-        $video->duration = FFMpegUtil::getDuration($absPath);
+        $videoInfo = FFMpegUtil::getVideoInfo($absPath);
+
+        $video->duration = Arr::get($videoInfo,'duration',null);
+        $video->width = Arr::get($videoInfo,'width',null);
+        $video->height = Arr::get($videoInfo,'height',null);
 
         $video->save();
+        dispatch(new MakeCover($video->id));
         return $video;
     }
 

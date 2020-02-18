@@ -16,14 +16,15 @@ class CreateVideosTable extends Migration
         Schema::create('videos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedInteger('user_id');
-            $table->unsignedInteger('cover_id');
+            $table->unsignedInteger('cover_id')->nullable();
             $table->string('relative_path', 100)->nullable()->comment('相对路径');
             $table->string('absolute_path', 100)->nullable()->comment('绝对路径');
             $table->string('hash')->nullable()->comment('file hash value');
             $table->string('disk', 30)->nullable()->comment('on which disk');
             $table->string('type', 30)->nullable()->comment('类型');
             $table->float('duration')->nullable()->comment('时长');
-
+            $table->float('width')->nullable()->comment('宽');
+            $table->float('height')->nullable()->comment('高');
             $table->nullableMorphs('used');
 
             $table->index('user_id');
