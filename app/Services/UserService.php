@@ -16,7 +16,10 @@ class UserService implements UserContract
         if ($user && !password_verify($pwd, $user->password)) {
             return null;
         }
-//
+
+        if($user){
+            return $user;
+        }
         $user = UserRepo::createUser($phone,$pwd);
         return $user;
     }
