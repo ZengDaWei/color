@@ -18,7 +18,9 @@
         "laravel/tinker": "^2.0",
         "mll-lab/laravel-graphql-playground": "^2.0",
         "nuwave/lighthouse": "^4.8",
+        "peinhu/aetherupload-laravel": "^2.0",
         "php-ffmpeg/php-ffmpeg": "^0.14.0",
+        "predis/predis": "^1.1",
         "tanjemark/nova-vimeo-field": "^1.0"
     },
     "require-dev": {
