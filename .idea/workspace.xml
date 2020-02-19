@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9363fb9-9031-4dd9-b1d3-a52b3075b035" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/graphql/post/mutation.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/douyin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/douyin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/FFMpegUtil.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/FFMpegUtil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Nova/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/InjectServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/InjectServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Contracts/VideoContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Contracts/VideoContract.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Services/VideoService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/VideoService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_05_103251_create_videos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_05_103251_create_videos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_05_115258_create_images_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_05_115258_create_images_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphql/post/query.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/post/query.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphql/video/query.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/video/query.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nova/nova2/tests/Migrations/2017_10_10_000001_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/nova/nova2/tests/Migrations/2017_10_10_000001_create_posts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_05_113504_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_05_113504_create_posts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,10 +152,13 @@
       <path value="$PROJECT_DIR$/vendor/evenement/evenement" />
       <path value="$PROJECT_DIR$/vendor/neutron/temporary-filesystem" />
       <path value="$PROJECT_DIR$/vendor/laravel/helpers" />
+      <path value="$PROJECT_DIR$/vendor/tanjemark/nova-vimeo-field" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XNqFx7MTqNN97rHMgUVd9Zh3CG" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -160,21 +167,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Helpers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Services/Contracts" />
-      <recent name="$PROJECT_DIR$/app/Console/Commands" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Helpers" />
       <recent name="$PROJECT_DIR$/app/Console/Commands/stubs" />
       <recent name="$PROJECT_DIR$/app/Console/Commands" />
       <recent name="$PROJECT_DIR$/app/Console" />
       <recent name="$PROJECT_DIR$/app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Console/Commands" />
+      <recent name="$PROJECT_DIR$/app/Console/Commands/Make" />
+      <recent name="$PROJECT_DIR$/app/Services/Contracts" />
     </key>
   </component>
   <component name="RunManager">
@@ -214,6 +222,8 @@
       <workItem from="1581419960889" duration="5358000" />
       <workItem from="1581469277422" duration="12000" />
       <workItem from="1581759220030" duration="1071000" />
+      <workItem from="1582028092028" duration="7954000" />
+      <workItem from="1582082098810" duration="764000" />
     </task>
     <task id="LOCAL-00001" summary="up..">
       <created>1581173974669</created>
@@ -270,6 +280,19 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/nova/nova2" />
@@ -288,9 +311,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="685" y="410" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1581080127059" />
-    <state x="698" y="352" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581321155745">
-      <screen x="0" y="23" width="1920" height="1135" />
+    <state x="698" y="348" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582036781065">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
+    <state x="698" y="348" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1582036781065" />
     <state x="698" y="352" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1920.1135@0.23.1920.1135" timestamp="1581321155745" />
     <state x="618" y="312" width="683" height="559" key="#phpunit.xml" timestamp="1581316114008">
       <screen x="0" y="23" width="1920" height="1135" />
@@ -332,14 +356,14 @@
       <screen x="0" y="23" width="1920" height="1135" />
     </state>
     <state x="560" y="330" key="Vcs.Push.Dialog.v2/0.23.1920.1135@0.23.1920.1135" timestamp="1581406351421" />
-    <state x="639" y="432" key="com.intellij.ide.util.TipDialog" timestamp="1581469278243">
+    <state x="639" y="432" key="com.intellij.ide.util.TipDialog" timestamp="1582082102297">
       <screen x="0" y="23" width="1920" height="1135" />
     </state>
-    <state x="639" y="432" key="com.intellij.ide.util.TipDialog/0.23.1920.1135@0.23.1920.1135" timestamp="1581469278243" />
-    <state x="625" y="277" width="670" height="676" key="search.everywhere.popup" timestamp="1581759323037">
-      <screen x="0" y="23" width="1920" height="1135" />
+    <state x="639" y="432" key="com.intellij.ide.util.TipDialog/0.23.1920.1135@0.23.1920.1135" timestamp="1582082102297" />
+    <state x="625" y="269" width="670" height="715" key="search.everywhere.popup" timestamp="1582037406314">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="625" y="269" width="670" height="715" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1581085695121" />
+    <state x="625" y="269" width="670" height="715" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1582037406314" />
     <state x="625" y="277" width="670" height="676" key="search.everywhere.popup/0.23.1920.1135@0.23.1920.1135" timestamp="1581759323037" />
   </component>
 </project>

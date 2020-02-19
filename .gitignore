@@ -34,6 +34,7 @@ Homestead.json
 /.vagrant
 .phpunit.result.cache
 /.idea
+/.idea/workspace.xml
 .phpstorm.meta.php
 _ide_helper.php
 _ide_helper_models.php

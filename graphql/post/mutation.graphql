@@ -1,0 +1,8 @@
+extend type Mutation @namespace(field:"mutations"){
+    createPostByVideoUrl(
+        title:String,
+        content:String,
+        videoUrl:String,
+        userId:ID!
+    ):Post @field(resolver:"PostMutation@createPostByVideoUrl")
+}

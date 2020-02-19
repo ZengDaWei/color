@@ -14,6 +14,7 @@ class InjectServiceProvider extends ServiceProvider
     public function register():void
     {
         $this->app->bind(\App\Services\Contracts\UserContract::class, \App\Services\UserService::class);
+        $this->app->bind(\App\Services\Contracts\PostContract::class, \App\Services\PostService::class);
     }
 
     /**

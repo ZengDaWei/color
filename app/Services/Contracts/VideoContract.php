@@ -7,6 +7,6 @@ use Illuminate\Http\UploadedFile;
 
 interface VideoContract
 {
-    public static function uploadFile(UploadedFile $file,string $path);
+    public static function uploadFile($fileUrl,string $path);
     public static function uploadVideo(UploadedFile $file,User $user);
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "81d75d1f0c7f2bfcd0f14c7841676d5b",
+    "content-hash": "473d54650a16c10436c65e322c7d3e71",
     "packages": [
         {
             "name": "alchemy/binary-driver",
@@ -5120,6 +5120,55 @@
                 "dump"
             ],
             "time": "2020-01-25T12:44:29+00:00"
+        },
+        {
+            "name": "tanjemark/nova-vimeo-field",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tanjemark/nova-vimeo-field.git",
+                "reference": "f6699ea1dd97d06286a5c978e569bbc2b64f7e36"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tanjemark/nova-vimeo-field/zipball/f6699ea1dd97d06286a5c978e569bbc2b64f7e36",
+                "reference": "f6699ea1dd97d06286a5c978e569bbc2b64f7e36",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tanjemark\\Fields\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tanjemark\\Fields\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova field.",
+            "keywords": [
+                "field",
+                "laravel",
+                "nova",
+                "vimeo"
+            ],
+            "time": "2018-08-28T09:22:32+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
