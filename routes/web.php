@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    $result = \App\Services\VideoService::uploadVideoByVideoUrl('https://cv.phncdn.com/videos/201909/13/248140321/720P_1500K_248140321.mp4?m86mCjhUqT289TXryjXLAzmLVmYbd0ZfcW17c791wjHP6r2kaAL7dWN2IFfy5YEAP4g8XAxL_54Rj57xEcPGotSW6ki16gRiI2xgqB_WCos7bfhSSBVtsox46WYzDU0M12qQyyV6wa61GE4jTbmMdmjwUU6ke2Q4q3alICaF4md79-15YMAfXdkGCTWZcpMKJ9WCUTTlxx4');
+    $result = \App\Services\VideoService::uploadVideoByVideoUrl('https://dv.phncdn.com/videos/201908/19/242810871/480P_600K_242810871.mp4?ttl=1582100246&ri=1228800&rs=4000&hash=2548fa567b93990c50158046dc84754f',\App\User::find(1));
     dd($result);
     return '此站点已经关闭';
 });
